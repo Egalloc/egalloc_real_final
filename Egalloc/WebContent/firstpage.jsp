@@ -15,15 +15,14 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
 
+				<%-- CSS --%>
         <link rel="stylesheet" href="css/firstpage.css">
-       	<script src="js/buildcollage.js" type="text/javascript"></script> 
-       	<script type="text/javascript">
-       	</script>
+				<link rel="stylesheet" href="css/main.css">
+
+				<%-- JavaScript --%>
+       	<script src="js/buildcollage.js" type="text/javascript"></script>
     </head>
     <body>
         <div id="content">
@@ -32,12 +31,14 @@
               <button id="search-bar-submit" class="search-bar'button" type="submit" onclick="checkForText()">Constants.BUILD_COLLAGE</button>
             </div>
         </div>
-        
+
+				<%-- JavaScript --%>
         <script>
+					// Implements "Press Enter to trigger 'Build Collage' button functionality"
 	        document.querySelector("#search-bar-input").addEventListener("keyup", event => {
-	          if(event.key !== "Enter") return; // Use `.key` instead.
-	          document.querySelector("#search-bar-submit").click(); // Things you want to do.
-	          event.preventDefault(); // No need to `return false;`.
+	          if(event.key !== "Enter") return;
+	          document.querySelector("#search-bar-submit").click();
+	          event.preventDefault();
 	      	});
         </script>
     </body>
