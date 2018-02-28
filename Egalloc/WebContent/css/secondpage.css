@@ -1,0 +1,90 @@
+/* SET-UP */
+html, body {
+	background-color: white;
+}
+
+.centered-width {
+	width: 60vw;
+	min-width: 800px;
+	margin: 0 auto;
+}
+
+/* COLLAGE / ERROR-MESSAGE AREA */
+#collage-generator {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#collage-container {
+}
+
+#collage-caption {
+  font-size: 24pt;
+  padding: 15px 0;
+  padding-top: 30px;
+  color: black;
+}
+
+.collage-area {
+  width: 60vw;
+  height: 45vh;
+  min-width: 800px;
+  min-height: 600px;
+  background-color: white;
+  margin: 0 auto;
+  font-size: 18pt;
+}
+
+.display-collage {
+	display: block;
+}
+
+#collage-placeholder {
+	/*display: none;*/
+}
+
+.placeholder {
+}
+
+#error-text {
+  font-size: 18pt;
+  padding-top: 250px;
+}
+
+.error-message {
+	padding-top: 275px;
+	color: black;
+}
+
+
+/* SEARCH & EXPORT BAR */
+#search-container {
+  padding: 10px 0;
+}
+
+#search-bar-container {
+  display: inline-block;
+  padding: 15px 0;
+}
+
+/* SAVED COLLAGES */
+#saved-collages {
+  position: relative;
+  background-color: white;
+  padding: 20px 0;
+  
+  /* for horizontal scroll */
+  width: auto;
+  height: 120px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.saved-collage {
+    margin: 0 10px;
+    display: inline-block;
+    width: 210px;
+    height: 120px;
+}
